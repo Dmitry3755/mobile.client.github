@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigation_sign_in">
+
+    <fragment
+        android:id="@+id/navigation_sign_in"
+        android:name="com.example.githubservice.ui.screens.sign_in.SignInFragment"
+        android:label="fmt_sign_in"
+        tools:layout="@layout/fmt_sign_in">
+        <action
+            android:id="@+id/action_navigation_sign_in_to_navigation_repositories"
+            app:destination="@id/navigation_repositories" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_repositories"
+        android:name="com.example.githubservice.ui.screens.repositories.RepositoriesFragment"
+        android:label="fmt_repositories"
+        tools:layout="@layout/fmt_repositories"/>
+
+</navigation>
