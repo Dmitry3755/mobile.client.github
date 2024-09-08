@@ -36,8 +36,6 @@ dependencies {
     implementation(libs.retrofit.adapter.rxjava2)
     //OkHttp
     implementation(libs.squareup.okhttp3)
-    //Apis
-    implementation(libs.scribejava.apis)
 
     implementation(project(mapOf("path" to ":domain")))
 

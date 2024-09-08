@@ -6,8 +6,12 @@
     <string name="fmt_sign_up_in_required">Обязательно*</string>
     <string name="fmt_sign_in_text_enter">Войти</string>
 
-    <string name="error">Произошла ошибка</string>
+    <string name="recycler_view_repositories_name">Job-Search-hh</string>
+    <string name="recycler_view_repositories_description">Мобильный клиент для GitHub</string>
+    <string name="recycler_view_name_owner">Dmitry</string>
+    <string name="recycler_view_forks">forks: </string>
+    <string name="recycler_view_watches">watches: </string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="error">Произошла ошибка</string>
+    <string name="error_something_went_wrong">Упс, что-то пошло не так</string>
 </resources>

@@ -1,17 +1,17 @@
 package com.example.domain.entities;
 
 public class Repositories {
-    private String id;
-    private String nodeId;
-    private String name;
-    private String fullName;
-    private Boolean securityPrivate;
-    private Owner owner;
-    private String description;
-    private Boolean fork;
-    private String url;
-    private Integer forksCount;
-    private Integer watchers;
+    public String id;
+    public String nodeId;
+    public String name;
+    public String fullName;
+    public Boolean securityPrivate;
+    public Owner owner;
+    public String description;
+    public Boolean fork;
+    public String url;
+    public Integer forksCount;
+    public Integer watchers;
 
     public Repositories(
             String id,

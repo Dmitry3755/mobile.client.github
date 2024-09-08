@@ -40,11 +40,10 @@ android {
 
 dependencies {
 
+    implementation(libs.picasso)
+
     implementation(project(mapOf("path" to ":data")))
     implementation(project(mapOf("path" to ":domain")))
-
-    //Apis
-    implementation(libs.scribejava.apis)
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)

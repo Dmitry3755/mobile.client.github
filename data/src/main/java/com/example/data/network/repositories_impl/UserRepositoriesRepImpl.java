@@ -18,7 +18,7 @@ public class UserRepositoriesRepImpl implements UserRepositoriesRepository {
         Thread flow = new Thread(repositoriesListRunnable);
         flow.start();
         flow.join();
-        return repositoriesListRunnable.getListRepositories();
+        return repositoriesListRunnable.getResult();
     }
 
 }
