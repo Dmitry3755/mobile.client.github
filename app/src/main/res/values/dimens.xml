@@ -6,6 +6,7 @@
     <dimen name="spacer_5">5dp</dimen>
 
     <dimen name="corner_radius_10">10dp</dimen>
+    <dimen name="corner_radius_15">15dp</dimen>
 
     <dimen name="width_2">2dp</dimen>
 

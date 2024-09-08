@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.screens.sign_in.SignInFragment">
+    tools:context=".ui.screens.sign_in.SignInFragment" >
 
     <LinearLayout
         android:id="@+id/linear_layout"
@@ -15,7 +15,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/bg_view">
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textInputLayout"
@@ -30,12 +31,11 @@
             android:id="@+id/textInputLayout2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="@dimen/spacer_5"
-            app:boxStrokeWidth="0dp"
-            app:boxStrokeWidthFocused="0dp">
+            style="@style/TextInputLayout"
+            android:textColorHint="@color/gray">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/sign_in_email_edit_text"
+                android:id="@+id/sign_in_login_edit_text"
                 style="@style/TextInputEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -47,12 +47,11 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textInputLayout3"
+            style="@style/TextInputLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="@dimen/spacer_5"
-            app:boxStrokeWidth="0dp"
-            app:boxStrokeWidthFocused="0dp"
-            app:endIconMode="password_toggle">
+            app:endIconMode="password_toggle"
+            android:layout_marginTop="@dimen/spacer_5">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/sign_in_password_edit_text"
@@ -69,7 +68,9 @@
         <Button
             android:id="@+id/sign_in_button"
             style="@style/Button"
+            android:enabled="true"
             android:layout_marginTop="@dimen/spacer_15"
+            android:layout_marginBottom="@dimen/spacer_10"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/fmt_sign_in_text_enter" />

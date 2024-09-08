@@ -30,6 +30,17 @@ android {
 
 dependencies {
 
+    //Retrofit2
+    implementation(libs.retrofit)
+    implementation(libs.converter.gson)
+    implementation(libs.retrofit.adapter.rxjava2)
+    //OkHttp
+    implementation(libs.squareup.okhttp3)
+    //Apis
+    implementation(libs.scribejava.apis)
+
+    implementation(project(mapOf("path" to ":domain")))
+
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     testImplementation(libs.junit)

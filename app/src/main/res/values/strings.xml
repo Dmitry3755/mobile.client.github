@@ -5,6 +5,9 @@
     <string name="fmt_sign_up_in_hint_text_login">Login</string>
     <string name="fmt_sign_up_in_required">Обязательно*</string>
     <string name="fmt_sign_in_text_enter">Войти</string>
+
+    <string name="error">Произошла ошибка</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
