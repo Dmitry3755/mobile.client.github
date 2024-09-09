@@ -10,12 +10,13 @@
     android:background="@color/background"
     android:paddingHorizontal="@dimen/spacer_15">
 
+
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragment_container_view"
-        android:layout_gravity="center"
         android:name="androidx.navigation.fragment.NavHostFragment"
-        android:layout_width="600dp"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_gravity="center"
         app:defaultNavHost="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,4 +24,4 @@
         app:layout_constraintTop_toTopOf="parent"
         app:navGraph="@navigation/nav_graph"/>
 
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout >

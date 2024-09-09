@@ -12,6 +12,14 @@
     <string name="recycler_view_forks">forks: </string>
     <string name="recycler_view_watches">watches: </string>
 
+    <string name="commit_hash_data">hash: a349857bv3498t62332</string>
+    <string name="commit_hash">hash: a349857bv3498t62332</string>
+    <string name="commit_text">feat: добавлены новые стили для элементов</string>
+    <string name="commit_date">01.11.2022</string>
+    <string name="commit_author">Balthazar</string>
+
     <string name="error">Произошла ошибка</string>
+    <string name="error_with_get_code">Произошла ошибка с получем кода</string>
     <string name="error_something_went_wrong">Упс, что-то пошло не так</string>
+    <string name="error_network">Проверьте подключение к интернету</string>
 </resources>

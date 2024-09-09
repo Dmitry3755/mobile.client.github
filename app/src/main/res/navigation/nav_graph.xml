@@ -17,8 +17,17 @@
 
     <fragment
         android:id="@+id/navigation_repositories"
-        android:name="com.example.githubservice.ui.screens.repositories.RepositoriesFragment"
+        android:name="com.example.githubservice.ui.screens.list_repositories.RepositoriesFragment"
         android:label="fmt_repositories"
-        tools:layout="@layout/fmt_repositories"/>
+        tools:layout="@layout/fmt_list_repositories">
+        <action
+            android:id="@+id/action_navigation_repositories_to_repositoryFragment"
+            app:destination="@id/repository_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/repository_fragment"
+        android:name="com.example.githubservice.ui.screens.repository.RepositoryFragment"
+        android:label="fmt_repository"
+        tools:layout="@layout/fmt_repository" />
 
 </navigation>

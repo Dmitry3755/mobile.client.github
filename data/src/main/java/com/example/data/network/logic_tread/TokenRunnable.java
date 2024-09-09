@@ -1,8 +1,10 @@
 package com.example.data.network.logic_tread;
 
+import android.content.Context;
+
 import com.example.data.entities.Token;
 import com.example.data.network.module.RetrofitProvider;
-import com.example.data.network.module.SharedPreferenceModule;
+import com.example.data.shared.TokenSharedPreference;
 import com.example.domain.utils.Result;
 
 import java.io.IOException;
@@ -12,9 +14,9 @@ import retrofit2.Response;
 
 public class TokenRunnable implements Runnable {
     RetrofitProvider retrofitProvider = new RetrofitProvider();
-    public String code = "";
     Result<String> result = new Result.Loading();
-
+    public String code = "";
+    public Context context;
     @Override
     public void run() {
         try {
@@ -26,7 +28,7 @@ public class TokenRunnable implements Runnable {
             Response<Token> response = call.execute();
             if (response.isSuccessful() && response.body() != null) {
                 Token.getInstance().setAccessToken(response.body().getAccessToken());
-                SharedPreferenceModule.getInstance().setToken(response.body().getAccessToken());
+                TokenSharedPreference.getInstance().setToken(response.body().getAccessToken(),context);
                 result = new Result.OK<>("Token получен");
             } else {
                 result = new Result.Error(response.errorBody().string());

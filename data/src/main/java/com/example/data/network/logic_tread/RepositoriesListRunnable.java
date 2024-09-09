@@ -4,12 +4,8 @@ import android.util.Log;
 
 import com.example.data.entities.RepositoriesApi;
 import com.example.data.entities.Token;
-import com.example.data.network.api.UserAuthGitHubApi;
-import com.example.data.network.module.RetrofitModule;
 import com.example.data.network.module.RetrofitProvider;
-import com.example.data.network.module.SharedPreferenceModule;
 import com.example.domain.entities.Repositories;
-import com.example.domain.repositories.SharedPreferenceRepository;
 import com.example.domain.utils.Result;
 
 import java.io.IOException;
@@ -17,7 +13,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import retrofit2.Call;
-import retrofit2.Callback;
 import retrofit2.Response;
 
 public class RepositoriesListRunnable implements Runnable {

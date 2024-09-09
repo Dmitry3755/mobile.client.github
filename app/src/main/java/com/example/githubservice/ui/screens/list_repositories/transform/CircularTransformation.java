@@ -1,4 +1,4 @@
-package com.example.githubservice.ui.screens.repositories.transform;
+package com.example.githubservice.ui.screens.list_repositories.transform;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;

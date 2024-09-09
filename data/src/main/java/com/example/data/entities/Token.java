@@ -1,8 +1,5 @@
 package com.example.data.entities;
 
-import android.content.SharedPreferences;
-
-import com.example.data.network.module.SharedPreferenceModule;
 import com.google.gson.annotations.SerializedName;
 
 public class Token {
